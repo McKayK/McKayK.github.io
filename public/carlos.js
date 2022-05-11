@@ -1,10 +1,16 @@
-import "./style.css";
+// import "./style.css";
 
-import * as THREE from "three";
+// import * as THREE from "https://unpkg.com/three@0.126.1/build/three.module.js";
 
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// const THREE = require("three");
 
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+// const OrbitControls = require("./three/examples/jsm/controls/OrbitControls.js");
+
+// const GLTFLoader = require("./three/examples/jsm/loaders/GLTFLoader.js");
+
+import { OrbitControls } from "https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js";
+
+// import { GLTFLoader } from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js/examples/jsm/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
 
@@ -95,7 +101,7 @@ scene.add(mckay);
 
 //custom 3d
 
-let loader = new GLTFLoader();
+let loader = new THREE.GLTFLoader();
 let mRing;
 let castle;
 

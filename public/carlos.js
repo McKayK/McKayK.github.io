@@ -1,6 +1,6 @@
 // import "./style.css";
 
-import * as THREE from "three";
+// import * as THREE from "three";
 
 // const THREE = require("three");
 
@@ -120,7 +120,7 @@ loader.load("./hommCastle.gltf", function (gltf) {
 const moveCamera = () => {
   const t = document.body.getBoundingClientRect().top;
   // if (castle) castle.rotation.x += 0.05;
-  // if (castle) castle.rotation.y += 0.075;
+  if (castle) castle.rotation.y += 0.005;
   // if (castle) castle.rotation.z += 0.05;
 
   mckay.rotation.y += 0.01;
@@ -143,7 +143,7 @@ const animate = () => {
   if (mRing) mRing.rotation.z += 0.0008;
 
   // if (castle) castle.rotation.x += 0.0008;
-  if (castle) castle.rotation.y += 0.0008;
+  if (castle) castle.rotation.y += 0.0001;
   // if (castle) castle.rotation.z += 0.0008;
 
   controls.update();
@@ -152,9 +152,3 @@ const animate = () => {
 };
 
 animate();
-
-const asdf = () => {
-  alert("page loaded");
-};
-
-asdf();
